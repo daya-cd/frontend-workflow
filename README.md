@@ -7,7 +7,7 @@ Frontend workflow with [Gulp](https://github.com/gulpjs/gulp), [browser sync](ht
 Installation
 ------------
 
-1. Install [node.js](http://nodejs.org/)
+1. Assuming you have node and npm installed.
 2. Clone the git repo `git clone https://github.com/daya-cd/frontend-workflow.git`
 3. Install Gulp `npm install -g gulp`
 4. Install dependencies `npm install`
