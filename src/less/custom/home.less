@@ -1,0 +1,33 @@
+.home, .template{
+	.presentation-block{
+		display: block;
+		min-height: 250px;
+		border: 1px solid @primary-color;
+  		margin-top: 15px;
+  		margin-bottom: 15px;
+  		display: flex;
+    	justify-content:center;
+    	align-content:center;
+    	flex-direction:column; /* column | row */
+
+    	h3, h4, a{
+			color: @primary-color;
+		}
+
+		a:hover{
+			text-decoration: none;
+			opacity: @opacity;
+		}
+
+		a:focus{
+			text-decoration: none;
+		}
+	}
+
+	.pres-type{
+		.label-default{
+			background-color: @primary-color;
+			color: @white-color;
+		}
+	}
+}

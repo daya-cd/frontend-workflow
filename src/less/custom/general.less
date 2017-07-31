@@ -1,0 +1,134 @@
+/* Custom less goes here */
+
+
+/*
+h3{
+	font-size: 25px;
+}
+*/
+
+body{
+	color: @primary-color;
+}
+
+.circle {
+	border-radius: 50%;
+	width: 10px;
+	height: 10px; 
+}
+
+.user {
+	.valign-center{
+	vertical-align: middle;
+}
+}
+
+.centered-title{
+	text-align: center;
+	color: @primary-color;
+	margin-bottom: 20px;
+	margin-top: 20px;
+
+	.right-block{
+		position: relative;
+		top: -10px;
+		margin-left: 10px;
+	}
+}
+
+.add{
+	border-radius: 50%;
+    width: 50px;
+    height: 50px;
+	background-color: @primary-color;
+  -o-transition:.3s;
+  -ms-transition:.3s;
+  -moz-transition:.3s;
+  -webkit-transition:.3s;
+  transition:.3s;
+
+	.glyphicon-plus{
+		color: @white-color;
+		font-size: 24px;
+    	top: 11px;
+    	right: -1px;
+	}
+
+	&:hover {
+      opacity: 0.9;
+    }
+}
+
+.add-inverse{
+	border-radius: 50%;
+    width: 50px;
+    height: 50px;
+	background-color: @white-color;
+  -o-transition:.3s;
+  -ms-transition:.3s;
+  -moz-transition:.3s;
+  -webkit-transition:.3s;
+  transition:.3s;
+
+	.glyphicon-plus{
+		color: @primary-color;
+		font-size: 24px;
+    	top: 11px;
+    	right: -1px;
+	}
+
+	&:hover {
+      opacity: 0.9;
+    }
+}
+
+
+.block-divider{
+	height: 30px;
+}
+
+.align-inline{
+	display: inline-block;
+}
+
+.margin-top-fix{
+	margin-top: 20px;
+}
+
+.margin-bottom-fix{
+	margin-bottom: 40px;
+}
+
+.hr{
+	border-top: 1px solid @primary-color;
+	margin-bottom: 40px;
+}
+.button-block{
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.alert{
+	margin-bottom: 30px;
+}
+
+.alert-info {
+    background-color: @secondary-color;
+    border-color: @secondary-color;
+    color: @primary-color;
+}
+
+.progress-bar-primary{
+	background-color: @primary-color;
+}
+
+h2 small{
+	color: @primary-color;
+}
+
+form{
+	.checkbox{
+		width: 20px;
+		height: 20px;
+	}
+}

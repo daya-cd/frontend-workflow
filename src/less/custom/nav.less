@@ -1,0 +1,94 @@
+ .navbar-default{
+    // height: @navbar-height;
+	border-radius: 0px;
+	background-color: @navbar-bg-color;
+	border-color: @navbar-bg-color;
+
+    .navbar-brand{
+     color: @primary-color;
+
+     img{
+        width: 200px;
+        margin-top: -15px;
+        display: inline-block;
+
+        @media only screen and (max-width : 992px) { width: 130px; }
+        @media only screen and (max-width : 500px) {  width: 180px; margin-top: -10px; }
+     }
+    } 
+
+    .navbar-nav{
+        margin: 0 -15px;
+    }
+
+    .navbar-nav>li {
+    color: @primary-color;
+
+    -o-transition: background-color .1s;
+    -ms-transition: background-color .1s;
+    -moz-transition: background-color .1s;
+    -webkit-transition: background-color .1s;
+    transition: background-color .1s;
+
+    &:hover{
+        background-color: @primary-color;
+        a{
+            color: @white-color;
+        }
+        }
+    }
+
+    .navbar-nav>li>a {
+         color: @primary-color;
+    }
+
+    .name {
+        color: @primary-color;
+        font-weight: bold;
+        font-size: 18px;
+        margin-left: -5px;
+        margin-top: 24px;
+        margin-right: 30px;
+
+        @media only screen and (max-width : 992px) { font-size: 15px; }
+        @media only screen and (max-width : 500px) { display: none; }
+    }
+
+    .logo{
+        &:after {
+            content: " | ";
+            font-size: 35px;
+            margin-left: 10px;
+            margin-right: 10px;
+            position: relative;
+            top: -4px;
+
+            @media only screen and (max-width : 500px) { display: none; }
+        }
+    }  
+
+    .navbar-nav > .active > a{
+        background-color: @primary-color;
+        color: @white-color;
+
+        &:hover{
+            background-color: @primary-color;
+            color: @white-color;
+        }
+    }
+
+    .navbar-toggle{
+
+        border-color: @navbar-bg-color;
+        
+        &:focus{
+            background-color: @navbar-bg-color;
+            border-color: @navbar-bg-color;
+        }
+
+        .icon-bar{
+            background-color: @primary-color;
+        }
+    }
+
+}

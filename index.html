@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Front-end boilerplate </title>
+  <link rel="stylesheet" href="public/css/main.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+</head>
+<body>
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <!--Partial-->
+      <div class="navbar navbar-default">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand logo" href="/">
+            <img src="/images/logo.png" alt="Logo">
+          </a>
+          <a href="/">
+            <span class="name pull-left">Presentation Tool</span>
+          </a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+
+            <li><a href="/user/new">Register</a></li>
+            <li><a href="/session/new">Sign in</a></li>
+
+          </ul>
+        </div>
+      </div>
+      <!--Partial End-->
+
+      <div class="container">
+        <!--            -->
+        <div class="session-new">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="flash-message">
+
+              </div>
+              <div class="flash-message">
+
+              </div>
+              <div class="centered-title">
+                <div class="align-inline"><h2>Sign in</h2></div>
+              </div>
+              <div>
+                <hr class="hr">
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <form action="/session/create" method="POST" class="form-signin">
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input id="email" type="text" class="form-control" placeholder="Email address" name="email" value="">
+                    </div>
+                    <div class="form-group">
+                      <label for="password">Password</label>
+                      <input id="password" type="password" class="form-control" placeholder="Password" name="password">
+                    </div>
+                    <div class="form-group">
+                      <input type="submit" class="btn btn-md btn-primary form-control" value="Sign in" />
+                    </div>
+                    <input type="hidden" name="_csrf" value="S3a1pLBo-AdsWyXSAnTV4i0FC_IIyY9myxKI" />
+                  </form>
+                </div>
+              </div>
+              <div class="text-center">
+                <h2>Or</h2>
+              </div>
+              <div class="button-block">
+                <a href="/auth" class="btn btn-md btn-primary form-control">Single Sign On</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script type="text/javascript" src="js/libs.js"></script>
+      <script type="text/javascript" src="js/main.js"></script>
+
+
+    </body>
+    </html>
